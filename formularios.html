@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='/validaciones.js' defer></script>
+    <title>Semana 06 Ejercicios</title>
+</head>
+    <h2>Formualrio De Ingreso Para Nuevos Clientes</h2>
+    <form method="post" action="agregarclientes.php" onsubmit="return validarFormulario();">
+        <label for="nombre">Ingrese Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="correo">Ingrese Email</label>
+        <input type="email" name="correo" id="correo" >
+        <br>
+        <label for="direccion">Ingrese Direccion</label>
+        <input type="text" name="direccion" id="direccion">
+        <br>
+        <input type="submit" value="Registrar">
+        </form>
+
+        <h2>Formulario de Ingresos Para Nuevos Productos</h2>
+    <form method="post" action="agregarProductos.php" onsubmit="return validarFormulario();" >
+        <label for="producto">Ingrese Nombre del Producto: </label>
+        <input type="text" name="producto">
+        <br>
+        <label for="descripcion">Descripcion</label>
+        <input type="text" name="descripcion" >
+        <br>
+        <label for="precio">precio</label>
+        <input type="float" name="precio">
+        <br>
+        <label for="stock">stock Del Producto: </label>
+        <input type="int" name="stock">
+        <br>
+        <input type="submit" value="Registrar">
+        </form>
+</body>
+</html>
